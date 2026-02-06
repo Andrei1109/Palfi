@@ -1,0 +1,164 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.cardContent {
+    text-align: center;
+}
+
+.icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 0 20px rgba(0, 217, 255, 0.3));
+}
+
+.cardTitle {
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    letter-spacing: -0.01em;
+}
+
+.cardText {
+    color: #a0a0a0;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+/* Process Grid */
+.processGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.processNumber {
+    font-size: 3rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #00d9ff 0%, #9333ea 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+/* Subscriptions Grid */
+.subscriptionGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.subscriptionCard {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-height: 350px;
+}
+
+.subscriptionBadge {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.subscriptionHours {
+    font-size: 2rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #00d9ff 0%, #9333ea 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0.5rem 0;
+}
+
+.popularCard {
+    position: relative;
+    border-color: rgba(0, 217, 255, 0.3) !important;
+}
+
+
+
+/* About Section */
+.aboutSection {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.aboutContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.aboutContent p {
+    color: #a0a0a0;
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
+
+/* CTA Section */
+.ctaSection {
+    background: #0a0a0a;
+    color: #ffffff;
+    text-align: center;
+    padding: 6rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.ctaSection::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(147, 51, 234, 0.15) 0%, transparent 70%);
+}
+
+.ctaContent {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.ctaTitle {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.ctaText {
+    font-size: clamp(1.125rem, 2vw, 1.375rem);
+    line-height: 1.6;
+    margin: 0 auto 2.5rem;
+    color: #a0a0a0;
+    text-align: center;
+    max-width: 900px;
+}
+
+@media (max-width: 768px) {
+
+    .processGrid,
+    .subscriptionGrid {
+        grid-template-columns: 1fr;
+    }
+}

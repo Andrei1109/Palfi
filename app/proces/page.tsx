@@ -87,7 +87,7 @@ export default function ProcesPage() {
                         </p>
                         <div className={styles.processDetail}>
                             <strong style={{ color: '#00d9ff' }}>Obiectiv:</strong>
-                            <p className={styles.cardText}>Site-ul să fie exact cum ți-l dorești, nu "cam așa".</p>
+                            <p className={styles.cardText}>Site-ul să fie exact cum ți-l dorești, nu &quot;cam așa&quot;.</p>
                         </div>
                     </Card>
 

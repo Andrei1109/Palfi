@@ -178,11 +178,11 @@ export default function Home() {
               mici să intre online fără stres.
             </p>
             <p>
-              Nu sunt o corporație, nu am "departamente". Sunt eu, omul tău de pe web. Vorbești
+              Nu sunt o corporație, nu am &quot;departamente&quot;. Sunt eu, omul tău de pe web. Vorbești
               direct cu mine, îți explic tot pe înțelesul tău și răspund eu la mesajele tale.
             </p>
             <p>
-              Cred că un site nu e doar "să existe", ci să te ajute să-ți crești afacerea. De
+              Cred că un site nu e doar &quot;să existe&quot;, ci să te ajute să-ți crești afacerea. De
               aceea te consiliez sincer și construiesc exact ce ai nevoie – nici mai mult, nici mai puțin.
             </p>
           </div>

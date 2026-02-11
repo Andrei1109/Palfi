@@ -7,7 +7,7 @@ export default function Hero() {
       <div className={styles.container}>
         <h1 className={styles.title}>
           Palfi<br />
-          mica ta <span className={styles.highlight}>fabricuță de site-uri</span>
+          Atelierul de <span className={styles.highlight}>site-uri</span>
         </h1>
         <p className={styles.subtitle}>
           Facem site-uri de prezentare pentru afaceri mici care nu vor bătăi de cap cu partea tehnică.

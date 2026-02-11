@@ -58,7 +58,6 @@ export default function ServiciiPage() {
                 <li>✓ Pentru site-uri One-Page</li>
                 <li>✓ Modificări text și imagini</li>
                 <li>✓ Actualizări de securitate</li>
-                <li>✓ Suport pe email</li>
               </ul>
               <Button href="/contact" variant="secondary">
                 Alege Entry
@@ -107,7 +106,7 @@ export default function ServiciiPage() {
               </Button>
             </div>
           </Card>
-        </div>
+        </div >
 
         <div className={styles.noteBox}>
           <p style={{ marginBottom: '1rem' }}>
@@ -117,10 +116,10 @@ export default function ServiciiPage() {
             Orele suplimentare peste cele incluse în abonament se facturează la tariful standard de 180 RON/oră.
           </p>
         </div>
-      </Section>
+      </Section >
 
       {/* Plata Inițială */}
-      <Section background="gray">
+      < Section background="gray" >
         <h2 className={styles.sectionTitle}>Cum funcționează plata inițială</h2>
         <div className={styles.paymentGrid}>
           <Card>
@@ -144,10 +143,10 @@ export default function ServiciiPage() {
             </p>
           </Card>
         </div>
-      </Section>
+      </Section >
 
       {/* CTA */}
-      <div className={styles.ctaSection}>
+      < div className={styles.ctaSection} >
         <h2 className={styles.ctaTitle}>Gata să începem?</h2>
         <p className={styles.ctaText}>
           Contactează-mă pentru o discuție gratuită de 20-30 minute
@@ -155,7 +154,7 @@ export default function ServiciiPage() {
         <Button href="/contact" variant="primary">
           Hai să vorbim
         </Button>
-      </div>
+      </div >
     </>
   );
 }

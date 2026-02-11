@@ -41,7 +41,7 @@
 
 ### Hero Section
 
-**H1:** BragWeb Labs – mica ta fabricuță de site-uri
+**H1:** BragWeb Labs – Atelierul de site-uri
 
 **Subheadline (P - mare):**  
 Facem site-uri de prezentare pentru afaceri mici care nu vor bătăi de cap cu partea tehnică. Tu îți vezi de business, noi avem grijă de tot ce înseamnă site.

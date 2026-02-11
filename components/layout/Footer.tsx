@@ -7,7 +7,7 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.footerSection}>
           <h3>Palfi</h3>
-          <p>Mica ta fabricuță de site-uri pentru afaceri mici.</p>
+          <p>Atelierul de site-uri pentru afaceri mici.</p>
           <p style={{ marginTop: '1rem' }}>Tu îți vezi de business, noi avem grijă de site.</p>
         </div>
 

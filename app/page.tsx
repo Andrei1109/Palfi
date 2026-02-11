@@ -134,7 +134,7 @@ export default function Home() {
               <div className={styles.subscriptionBadge}>Entry</div>
               <div className={styles.subscriptionHours}>1 oră / lună</div>
               <p className={styles.cardText}>
-                Pentru Landing Page-uri. Modificări text, imagini și suport email.
+                Pentru Landing Page-uri. Modificări text, imagini.
               </p>
               <Button href="/servicii" variant="secondary">
                 Detalii

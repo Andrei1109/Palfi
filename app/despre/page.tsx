@@ -3,6 +3,13 @@ import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import styles from '../servicii/servicii.module.css';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Despre Mine | Palfi - Web Developer Freelancer',
+  description: 'Programator full-stack cu experiență, dedicat afacerilor mici. Află cine sunt și de ce să alegi Palfi pentru site-ul tău.',
+};
+
 export default function DesprePage() {
   return (
     <>

@@ -3,6 +3,13 @@ import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import styles from './servicii.module.css';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Servicii & Abonamente | Palfi',
+  description: 'Descoperă serviciile noastre de web design și abonamentele de dezvoltare. Prețuri transparente pentru site-uri de prezentare și aplicații web complexe.',
+};
+
 export default function ServiciiPage() {
   return (
     <>
@@ -24,86 +31,90 @@ export default function ServiciiPage() {
         <div className={styles.pricingBox}>
           <div className={styles.priceAmount}>180 RON / oră</div>
           <p className={styles.priceText}>
-            Tarifuul nostru este simplu și transparent. Plătești pentru timpul efectiv lucrat,
+            Tariful nostru este simplu și transparent. Plătești pentru timpul efectiv lucrat,
             fără taxe ascunse sau surprize.
           </p>
         </div>
       </Section>
 
-      {/* Abonamente Detaliate */}
+      {/* Abonamente de Mentenanță */}
       <Section background="dark">
-        <h2 className={styles.sectionTitle}>Abonamente lunare de mentenanță</h2>
+        <h2 className={styles.sectionTitle}>Abonamente de Mentenanță</h2>
         <p className={styles.sectionSubtitle}>
-          Alege planul care ți se potrivește și ai grijă de site-ul tău fără griji
+          Asigură-te că site-ul tău funcționează perfect, cu ore de dezvoltare incluse lunar.
         </p>
 
         <div className={styles.subscriptionGrid}>
+          {/* Card 1: Entry */}
           <Card>
             <div className={styles.subscriptionCard}>
-              <h3 className={styles.subscriptionName}>Entry</h3>
-              <div className={styles.subscriptionPrice}>1 oră inclusă / lună</div>
+              <div className={styles.cardHeader}>
+                <h3 className={styles.subscriptionName}>Entry</h3>
+                <span className={styles.badge}>Landing Page</span>
+              </div>
+              <div className={styles.subscriptionPrice}>200 RON / lună</div>
+              <div className={styles.includedHours}>1 oră inclusă</div>
               <ul className={styles.featureList}>
-                <li>✓ Modificări minore de conținut</li>
-                <li>✓ Actualizări texte și poze</li>
-                <li>✓ Suport email</li>
-                <li>✓ Monitoring de performanță</li>
+                <li>✓ Pentru site-uri One-Page</li>
+                <li>✓ Modificări text și imagini</li>
+                <li>✓ Actualizări de securitate</li>
+                <li>✓ Suport pe email</li>
               </ul>
-              <p className={styles.bestFor}>
-                <strong>Perfect pentru:</strong> Afaceri mici care au nevoie ocazional de mici modificări
-              </p>
               <Button href="/contact" variant="secondary">
                 Alege Entry
               </Button>
             </div>
           </Card>
 
+          {/* Card 2: Business */}
           <Card className={styles.popularCard}>
             <div className={styles.subscriptionCard}>
-
-              <h3 className={styles.subscriptionName}>Mid</h3>
-              <div className={styles.subscriptionPrice}>2 ore incluse / lună</div>
+              <div className={styles.cardHeader}>
+                <h3 className={styles.subscriptionName}>Business</h3>
+                <span className={styles.badge}>Site-uri Medii (5-10 pagini)</span>
+              </div>
+              <div className={styles.subscriptionPrice}>500 RON / lună</div>
+              <div className={styles.includedHours}>3 ore incluse</div>
               <ul className={styles.featureList}>
-                <li>✓ Tot de la Entry +</li>
-                <li>✓ Actualizări regulate de conținut</li>
-                <li>✓ Modificări prețuri și servicii</li>
+                <li>✓ Dezvoltare funcționalități noi</li>
+                <li>✓ Adăugare secțiuni noi</li>
+                <li>✓ Optimizare viteză</li>
                 <li>✓ Suport prioritar</li>
-                <li>✓ Rapoarte lunare</li>
               </ul>
-              <p className={styles.bestFor}>
-                <strong>Perfect pentru:</strong> Afaceri cu actualizări regulate (servicii, prețuri, promoții)
-              </p>
               <Button href="/contact" variant="primary">
-                Alege Mid
+                Alege Business
               </Button>
             </div>
           </Card>
 
+          {/* Card 3: Enterprise */}
           <Card>
             <div className={styles.subscriptionCard}>
-              <h3 className={styles.subscriptionName}>Business</h3>
-              <div className={styles.subscriptionPrice}>4 ore incluse / lună</div>
+              <div className={styles.cardHeader}>
+                <h3 className={styles.subscriptionName}>Enterprise</h3>
+                <span className={styles.badge}>Complex / &gt;10 pagini</span>
+              </div>
+              <div className={styles.subscriptionPrice}>800 RON / lună</div>
+              <div className={styles.includedHours}>5 ore incluse</div>
               <ul className={styles.featureList}>
-                <li>✓ Tot de la Mid +</li>
-                <li>✓ Landing page-uri simple</li>
-                <li>✓ Secțiuni noi</li>
-                <li>✓ Campanii sezoniere</li>
-                <li>✓ Suport WhatsApp/Telefon</li>
-                <li>✓ Consultanță strategică</li>
+                <li>✓ Arhitectură complexă</li>
+                <li>✓ Integrări API & Baze de date</li>
+                <li>✓ Consultanță tehnică dedicată</li>
+                <li>✓ Monitorizare activă</li>
               </ul>
-              <p className={styles.bestFor}>
-                <strong>Perfect pentru:</strong> Afaceri active cu campanii dese și conținut dinamic
-              </p>
               <Button href="/contact" variant="secondary">
-                Alege Business
+                Cere ofertă
               </Button>
             </div>
           </Card>
         </div>
 
         <div className={styles.noteBox}>
+          <p style={{ marginBottom: '1rem' }}>
+            <strong style={{ color: '#00d9ff' }}>* Notă importantă:</strong> Oferim servicii de mentenanță <strong>exclusiv</strong> pentru site-urile și aplicațiile dezvoltate de noi.
+          </p>
           <p>
-            <strong>Notă:</strong> Orele suplimentare peste cele incluse în abonament se facturează
-            la tariful standard de 180 RON/oră.
+            Orele suplimentare peste cele incluse în abonament se facturează la tariful standard de 180 RON/oră.
           </p>
         </div>
       </Section>

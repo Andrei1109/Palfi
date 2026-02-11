@@ -4,6 +4,12 @@ import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import styles from './page.module.css';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  description: 'Creăm site-uri de prezentare și aplicații web performante pentru afaceri mici. Soluții complete cu design modern, SEO inclus și abonamente de dezvoltare.',
+};
+
 export default function Home() {
   return (
     <>
@@ -116,10 +122,10 @@ export default function Home() {
       {/* Abonamente */}
       <Section background="gray">
         <h2 className={styles.ctaTitle} style={{ marginBottom: '1rem' }}>
-          Alege abonamentul care ți se potrivește
+          Mentenanță pentru proiectele Palfi
         </h2>
         <p className={styles.ctaText} style={{ marginBottom: '4rem' }}>
-          După ce site-ul este gata, poți alege un abonament lunar cu ore de dezvoltare incluse.
+          După ce site-ul este gata, ai opțiunea să alegi un abonament de mentenanță dedicat.
         </p>
 
         <div className={styles.subscriptionGrid}>
@@ -128,7 +134,7 @@ export default function Home() {
               <div className={styles.subscriptionBadge}>Entry</div>
               <div className={styles.subscriptionHours}>1 oră / lună</div>
               <p className={styles.cardText}>
-                Perfect pentru afaceri mici care au nevoie ocazional de mici modificări de conținut.
+                Pentru Landing Page-uri. Modificări text, imagini și suport email.
               </p>
               <Button href="/servicii" variant="secondary">
                 Detalii
@@ -138,10 +144,10 @@ export default function Home() {
 
           <Card className={styles.popularCard}>
             <div className={styles.subscriptionCard}>
-              <div className={styles.subscriptionBadge}>Mid</div>
-              <div className={styles.subscriptionHours}>2 ore / lună</div>
+              <div className={styles.subscriptionBadge}>Business</div>
+              <div className={styles.subscriptionHours}>3 ore / lună</div>
               <p className={styles.cardText}>
-                Ideal dacă actualizezi periodic servicii, prețuri, promoții sau programul.
+                Pentru site-uri medii. Dezvoltare funcționalități și optimizare.
               </p>
               <Button href="/servicii" variant="primary">
                 Detalii
@@ -151,10 +157,10 @@ export default function Home() {
 
           <Card>
             <div className={styles.subscriptionCard}>
-              <div className={styles.subscriptionBadge}>Business</div>
-              <div className={styles.subscriptionHours}>4 ore / lună</div>
+              <div className={styles.subscriptionBadge}>Enterprise</div>
+              <div className={styles.subscriptionHours}>5 ore / lună</div>
               <p className={styles.cardText}>
-                Potrivit pentru afaceri cu campanii dese sau secțiuni noi regulate.
+                Pentru aplicații complexe. Monitorizare activă și consultanță tehnică.
               </p>
               <Button href="/servicii" variant="secondary">
                 Detalii

@@ -3,6 +3,13 @@ import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import styles from '../servicii/servicii.module.css';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Procesul de Lucru | Palfi - Cum construim site-ul tău',
+    description: 'Proces transparent în 6 pași, de la discuția inițială până la lansare. Află cum lucrăm și la ce să te aștepți.',
+};
+
 export default function ProcesPage() {
     return (
         <>

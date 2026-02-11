@@ -1,8 +1,15 @@
-'use client';
+
 
 import Section from '@/components/ui/Section';
 import Button from '@/components/ui/Button';
 import styles from '../servicii/servicii.module.css';
+
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contact | Palfi - Hai să vorbim despre proiectul tău',
+  description: 'Contactează-ne pentru o discuție gratuită despre site-ul tău. Suntem disponibili telefonic și pe WhatsApp.',
+};
 
 export default function ContactPage() {
   return (

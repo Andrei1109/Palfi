@@ -24,30 +24,30 @@ export default function PortofoliuPage() {
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '2.5rem' }}>
 
-            {/* Project 1 */}
+            {/* Project 1 - Fiteria */}
             <Card className={styles.projectCard} style={{ overflow: 'hidden', border: 'none', background: '#1e1e1e', padding: 0 }}>
               <div style={{ position: 'relative', height: '240px', width: '100%' }}>
                 <Image
-                  src="/images/projects/cip-barber.png"
-                  alt="Cip Barber Shop Preview"
+                  src="/images/projects/fiteria.png"
+                  alt="Fiteria Preview"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
               <div style={{ padding: '2rem' }}>
-                <h3 className={styles.cardTitle} style={{ marginBottom: '0.5rem', color: '#fff' }}>Cip Barber Shop</h3>
+                <h3 className={styles.cardTitle} style={{ marginBottom: '0.5rem', color: '#fff' }}>Fiteria</h3>
                 <p className={styles.cardText} style={{ marginBottom: '1.5rem', opacity: 0.8, color: '#ccc' }}>
-                  Un site web premium pentru un barbershop modern, cu accente aurii și design dark mode.
+                  Landing page premium pentru un bistro cu panini autentic napoletan. Design editorial dark-mode.
                 </p>
                 <div style={{ marginTop: 'auto' }}>
-                  <Button href="https://cip-barber-shop.vercel.app/" variant="secondary">
+                  <Button href="https://fiteria.vercel.app/" variant="secondary" target="_blank" rel="noopener noreferrer">
                     Vezi site
                   </Button>
                 </div>
               </div>
             </Card>
 
-            {/* Project 2 */}
+            {/* Project 2 - Noa Clinceni */}
             <Card className={styles.projectCard} style={{ overflow: 'hidden', border: 'none', background: '#1e1e1e', padding: 0 }}>
               <div style={{ position: 'relative', height: '240px', width: '100%' }}>
                 <Image
@@ -63,7 +63,30 @@ export default function PortofoliuPage() {
                   Prezentare imobiliară elegantă pentru un ansamblu rezidențial, punând accent pe luminozitate și spațiu.
                 </p>
                 <div style={{ marginTop: 'auto' }}>
-                  <Button href="https://noa-clinceni.vercel.app/" variant="secondary">
+                  <Button href="https://noa-clinceni.vercel.app/" variant="secondary" target="_blank" rel="noopener noreferrer">
+                    Vezi site
+                  </Button>
+                </div>
+              </div>
+            </Card>
+
+            {/* Project 3 - Cip Barber Shop */}
+            <Card className={styles.projectCard} style={{ overflow: 'hidden', border: 'none', background: '#1e1e1e', padding: 0 }}>
+              <div style={{ position: 'relative', height: '240px', width: '100%' }}>
+                <Image
+                  src="/images/projects/cip-barber.png"
+                  alt="Cip Barber Shop Preview"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+              <div style={{ padding: '2rem' }}>
+                <h3 className={styles.cardTitle} style={{ marginBottom: '0.5rem', color: '#fff' }}>Cip Barber Shop</h3>
+                <p className={styles.cardText} style={{ marginBottom: '1.5rem', opacity: 0.8, color: '#ccc' }}>
+                  Un site web premium pentru un barbershop modern, cu accente aurii și design dark mode.
+                </p>
+                <div style={{ marginTop: 'auto' }}>
+                  <Button href="https://cip-barber-shop.vercel.app/" variant="secondary" target="_blank" rel="noopener noreferrer">
                     Vezi site
                   </Button>
                 </div>

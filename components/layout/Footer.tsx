@@ -28,6 +28,17 @@ export default function Footer() {
           <p>Telefon: <a href="tel:0766289639" style={{ color: 'inherit', textDecoration: 'none' }}>0766 289 639</a></p>
           <p>Program: Luni - Vineri, 9:00 - 18:00</p>
         </div>
+
+        <div className={styles.footerSection}>
+          <h3>Legal</h3>
+          <div className={styles.navLinks}>
+            <Link href="/termeni-si-conditii">Termeni și Condiții</Link>
+            <Link href="/politica-confidentialitate">Politica de Confidențialitate</Link>
+            <a href="https://anpc.ro/" target="_blank" rel="nofollow noopener noreferrer">ANPC</a>
+            <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="nofollow noopener noreferrer">SOL (Litigii Online)</a>
+            <a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="nofollow noopener noreferrer">SAL (Litigii Alternative)</a>
+          </div>
+        </div>
       </div>
 
       <div className={styles.copyright}>

@@ -39,7 +39,7 @@ export default function ContactPage() {
             </Button>
           </div>
 
-          <p className={styles.cardText} style={{ fontSize: '1.125rem' }}>
+          <p className={styles.cardText} style={{ fontSize: '1.125rem', marginBottom: '2rem' }}>
             <strong style={{ color: '#00d9ff' }}>Program:</strong> Luni - Vineri, 9:00 - 18:00
           </p>
         </div>

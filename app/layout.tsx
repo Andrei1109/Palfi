@@ -56,6 +56,24 @@ export const metadata: Metadata = {
     },
 };
 
+const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Palfi Web Design',
+    url: 'https://palfi.ro',
+    logo: 'https://palfi.ro/logo.png',
+    description: 'Realizăm site-uri de prezentare și aplicații web pentru afaceri mici.',
+    founder: {
+        '@type': 'Person',
+        name: 'Andrei Palfi',
+    },
+    contactPoint: {
+        '@type': 'ContactPoint',
+        contactType: 'customer service',
+        url: 'https://palfi.ro/contact',
+    },
+};
+
 export default function RootLayout({
     children,
 }: {
@@ -63,6 +81,12 @@ export default function RootLayout({
 }) {
     return (
         <html lang="ro">
+            <head>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                />
+            </head>
             <body className={inter.variable}>
                 <Header />
                 <main>{children}</main>
